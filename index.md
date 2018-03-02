@@ -7,7 +7,7 @@ country: "us"
 language: "en"
 latlng: "41.732284, -72.793404"
 humandate: "Apr 2-3, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "12:00 pm - 5:00 pm on day 1, 9:00 am - 5:00 pm on day 2"
+humantime: "Apr 2: 12:00 pm - 5:00 pm, Apr 3: 9:00 am - 5:00 pm"
 startdate: 2018-04-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-04-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Sue McClatchy", "TBD"]
@@ -300,7 +300,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
+{% comment %}
 <div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
   <h3>The Bash Shell</h3>
 
@@ -611,7 +611,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
-
+{% endcomment %}
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -662,7 +662,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </div>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
-
+{% comment %}
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
   <h3>SQLite</h3>
 
@@ -780,4 +780,5 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
     </li>
   </ol>
 </div>
+{% endcomment %}
 {% endcomment %}
