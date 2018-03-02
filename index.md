@@ -1,18 +1,18 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+carpentry: ""    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+venue: "The Jackson Laboratory for Genomic Medicine"
+address: "Holt Conference Room, 10 Discovery Drive, Farmington, CT"
+country: "us"
+language: "en"
+latlng: "41.732284, -72.793404"
+humandate: "Apr 2-3, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "12:00 pm - 5:00 pm on day 1, 9:00 am - 5:00 pm on day 2"
+startdate: 2018-04-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-04-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Sue McClatchy", "TBD"]
+helper: ["FIXME"]
+email: ["susan.mcclatchy@jax.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -45,11 +45,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -193,28 +188,38 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 
-{% comment %} DO NOT EDIT SURVEY LINKS {% endcomment %}
-<p><em>Surveys</em></p>
-{% if page.carpentry == "swc" %} 
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "dc" %}
-  <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif page.carpentry == "lc" %}
-<p>Ask your instructor about pre- and post-workshop Survey details.</p>
-{% endif %}
+<div class="row">
+<div class="col-md-6">
+<h3>Monday, April 2</h3>
+<table class="table table-striped">
+<tr> <td>12:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/">Workshop Overview</a></td> </tr>
+<tr> <td>12:15</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/">Introduction to R and RStudio</a></td> </tr>
+<tr> <td>13:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/02-project-intro/">Project Management With RStudio</a></td> </tr>
+<tr> <td>14:15</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/03-seeking-help/">Seeking Help</a></td> </tr>
+<tr> <td>14:30</td>  <td>Coffee</td> </tr>
+<tr> <td>14:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/">Exploring Data Frames</a></td> </tr>
+<tr> <td>15:30</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/06-data-subsetting/">Subsetting Data</a></td> </tr>
+<tr> <td>16:15</td>  <td>Wrap-up</td> </tr>
+</table>
+</div>
+<div class="col-md-6">
+<h3>Tuesday, April 3</h3>
+<table class="table table-striped">
+<tr> <td>09:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/07-control-flow/">Control Flow</a></td> </tr>
+<tr> <td>10:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/09-vectorization/">Vectorization</a></td> </tr>
+<tr> <td>10:30</td>  <td>Coffee</td> </tr>
+<tr> <td>10:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/">Writing Data</a></td> </tr>
+<tr> <td>11:15</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/">Dataframe Manipulation with dplyr</a></td> </tr>
+<tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+<tr> <td>13:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/14-tidyr/">Dataframe Manipulation with tidyr</a></td> </tr>
+<tr> <td>14:30</td>  <td>Coffee</td> </tr>
+<tr> <td>14:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/">Producing Reports With knitr</a></td> </tr>
+<tr> <td>15:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder//08-plot-ggplot2/">Creating Publication-Quality Graphics</a></td> </tr>
+<tr> <td>16:45</td>  <td>Wrap-up</td> </tr>
+</table>
+</div>
+</div>
 
-
-{% if page.carpentry == "swc" %}
-  {% include sc/schedule.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/schedule.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/schedule.html %}
-{% endif %}
 
 {% comment %}
   Collaborative Notes
