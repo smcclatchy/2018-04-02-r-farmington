@@ -214,7 +214,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <tr> <td>13:00</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/14-tidyr/">Dataframe Manipulation with tidyr</a></td> </tr>
 <tr> <td>14:30</td>  <td>Coffee</td> </tr>
 <tr> <td>14:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/">Producing Reports With knitr</a></td> </tr>
-<tr> <td>15:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder//08-plot-ggplot2/">Creating Publication-Quality Graphics</a></td> </tr>
+<tr> <td>15:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/">Creating Publication-Quality Graphics</a></td> </tr>
 <tr> <td>16:45</td>  <td>Wrap-up</td> </tr>
 </table>
 </div>
@@ -256,15 +256,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 {% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabus.html %}
-{% endif %}
 
 <hr/>
 
