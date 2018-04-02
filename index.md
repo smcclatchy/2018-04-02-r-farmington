@@ -6,14 +6,14 @@ address: "Holt Conference Room, 10 Discovery Drive, Farmington, CT"
 country: "us"
 language: "en"
 latlng: "41.732284, -72.793404"
-humandate: "Apr 2-3, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "Apr 2: 12:00 pm - 5:00 pm, Apr 3: 9:00 am - 5:00 pm"
-startdate: 2018-04-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2018-04-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+humandate: "Apr 2-3, 2018"
+humantime: "Apr 2: 12:00 pm - 4:30 pm, Apr 3: 9:00 am - 4:30 pm"
+startdate: 2018-04-02
+enddate: 2018-04-03
 instructor: ["Sue McClatchy", "Pariksheet Nanda", "Ming Zhang", "Sandeep Namburi", "Neil Kindlon"]
-helper: ["Seda Arat", "Joshy George", "Samir Amin", "Dave McKenzie", "Dyanna Louyakis"]
+helper: ["Seda Arat", "Samir Amin", "Dave Mellert", "Dyanna Louyakis"]
 email: ["susan.mcclatchy@jax.org"]
-collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+collaborative_notes: https://public.etherpad-mozilla.org/p/2018-04-02-r-farmington
 eventbrite: 43905464426
 ---
 
@@ -200,6 +200,7 @@ eventbrite: 43905464426
 <tr> <td>14:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/05-data-structures-part2/">Exploring Data Frames</a></td> </tr>
 <tr> <td>15:30</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/06-data-subsetting/">Subsetting Data</a></td> </tr>
 <tr> <td>16:15</td>  <td>Wrap-up</td> </tr>
+<tr> <td>16:30</td>  <td>End</td> </tr>
 </table>
 </div>
 <div class="col-md-6">
@@ -215,7 +216,8 @@ eventbrite: 43905464426
 <tr> <td>14:30</td>  <td>Coffee</td> </tr>
 <tr> <td>14:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/15-knitr-markdown/">Producing Reports With knitr</a></td> </tr>
 <tr> <td>15:45</td>  <td><a href="http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/">Creating Publication-Quality Graphics</a></td> </tr>
-<tr> <td>16:45</td>  <td>Wrap-up</td> </tr>
+<tr> <td>16:15</td>  <td>Wrap-up</td> </tr>
+<tr> <td>16:30</td>  <td>End</td> </tr>
 </table>
 </div>
 </div>
